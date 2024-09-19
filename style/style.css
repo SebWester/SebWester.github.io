@@ -211,14 +211,31 @@ input[type="search"]:focus {
 
 #contact-form {
   width: 500px;
-  height: 500px;
+  height: fit-content;
   border: 1px solid #373a45;
   border-radius: 8px;
   margin-top: 50px;
 }
+form {
+  margin: 10px;
+}
+
+form label {
+  display: block;
+}
+
+#nameDiv,
+#mailDiv,
+#nrDiv {
+  margin-bottom: 5px;
+}
 
 #msg {
   resize: none;
+}
+
+#sendIt {
+  font-size: 1em;
 }
 
 /* FOOTER */
