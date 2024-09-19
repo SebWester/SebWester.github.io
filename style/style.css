@@ -217,6 +217,10 @@ input[type="search"]:focus {
   margin-top: 50px;
 }
 
+#msg {
+  resize: none;
+}
+
 /* FOOTER */
 #footer {
   background-color: #373a45;
