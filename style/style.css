@@ -211,10 +211,31 @@ input[type="search"]:focus {
 
 #contact-form {
   width: 500px;
-  height: 500px;
+  height: fit-content;
   border: 1px solid #373a45;
   border-radius: 8px;
   margin-top: 50px;
+}
+form {
+  margin: 10px;
+}
+
+form label {
+  display: block;
+}
+
+#nameDiv,
+#mailDiv,
+#nrDiv {
+  margin-bottom: 5px;
+}
+
+#msg {
+  resize: none;
+}
+
+#sendIt {
+  font-size: 1em;
 }
 
 /* FOOTER */
@@ -249,6 +270,7 @@ input[type="search"]:focus {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 10px;
   }
 
   #tags a {
@@ -265,13 +287,6 @@ input[type="search"]:focus {
   #aboutMe {
     width: auto;
     overflow-y: scroll;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .blog {
-    flex-direction: column;
-    height: 300px;
   }
 }
 
@@ -322,8 +337,9 @@ input[type="search"]:focus {
     flex-wrap: wrap;
   }
 
-  #tags {
-    margin-top: 8px;
+  .tag-container {
+    margin: 20px;
+    padding-top: 10px;
   }
 
   .blog {
@@ -352,5 +368,24 @@ input[type="search"]:focus {
   #readMore {
     align-self: center;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #searchContainer {
+    flex-direction: column;
+  }
+
+  .searchBox {
+    margin-bottom: 0px;
+  }
+
+  .tag-container {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  #tags {
+    margin-top: 0px;
   }
 }
