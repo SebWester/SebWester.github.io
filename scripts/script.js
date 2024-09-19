@@ -1,6 +1,5 @@
 // SCRIPT TEST!
 const searchButton = document.getElementById("search-btn");
-const comingSoon = document.getElementById("comingSoon");
 const navBtn = document.getElementById("navButton");
 const linkMenu = document.getElementById("linkMenu");
 
@@ -12,10 +11,6 @@ searchButton.addEventListener("click", function (event) {
   totalClicks += 1;
   console.log("Clicked!");
   console.log("Number of clicks: " + totalClicks);
-});
-
-comingSoon.addEventListener("click", function () {
-  alert("Coming soon!");
 });
 
 // Visa/dölj menyn på mobilskärm
