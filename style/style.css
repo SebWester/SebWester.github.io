@@ -388,4 +388,17 @@ form label {
   #tags {
     margin-top: 0px;
   }
+
+  #contact-form {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #topDiv {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+  }
 }
