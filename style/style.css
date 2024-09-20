@@ -273,12 +273,13 @@ form label {
     padding-top: 10px;
   }
 
-  #firstTag {
-    margin-left: 0px;
-  }
   #tags a {
     margin: 0;
     margin: 0 5px 0 5px;
+  }
+
+  #firstTag {
+    margin-left: 0px;
   }
 
   #blogContainer {
