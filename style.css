@@ -693,6 +693,7 @@ footer {
   }
   .card {
     height: 90%;
+    overflow-y: hidden;
   }
   #footerLeft {
     width: 0%;
