@@ -684,7 +684,7 @@ footer {
     font-size: 0.7em;
   }
   .card {
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -698,7 +698,7 @@ footer {
     margin-bottom: 5px;
   }
   .card {
-    height: 900px;
+    height: auto;
   }
   #footerLeft {
     width: 0%;
