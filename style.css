@@ -576,7 +576,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   #mainContainer {
-    height: auto;
+    height: 85vh;
   }
   #searchTags {
     width: 100px;
@@ -650,6 +650,9 @@ footer {
   #searchContainer {
     flex-direction: column;
     align-items: flex-start;
+  }
+  #blogContainer {
+    height: auto;
   }
   #searchDiv {
     margin-left: 10px;

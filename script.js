@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const socialLinks = document.querySelectorAll(".socialLinks");
   const socialLinksSmall = document.querySelectorAll(".socialLinksSmall");
+  const lastPara = document.querySelectorAll(".lastPara");
 
   function handleResize() {
     // Handling icon size depending on window width
@@ -21,6 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
       socialLinksSmall.forEach((smallIcon) => {
         smallIcon.style.display = "none";
+      });
+    }
+
+    // Removing last p-tag in every .card-div if window width < 530
+    if (window.innerWidth < 530) {
+      lastPara.forEach((para) => {
+        para.style.display = "none";
+      });
+    }
+    if (window.innerWidth > 530) {
+      lastPara.forEach((para) => {
+        para.style.display = "block";
       });
     }
   }
