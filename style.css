@@ -657,7 +657,7 @@ footer {
   }
   .postRight {
     float: right;
-    width: 60%;
+    width: 70%;
   }
   .textPreview {
     background-color: rgba(240, 241, 239, 0.9);
@@ -692,8 +692,7 @@ footer {
     margin-bottom: 5px;
   }
   .card {
-    height: 90%;
-    overflow-y: hidden;
+    height: 900px;
   }
   #footerLeft {
     width: 0%;
