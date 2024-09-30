@@ -1,90 +1,98 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastian Westerholm - Kontakt</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Blogg - Start</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV ETC.-->
+    <div id="topDiv">
+      <div id="navLeft">
+        <ul>
+          <li><a class="navLink" href="index.html">Start</a></li>
+          <li><a class="navLink" href="about.html">Om mig</a></li>
+          <li><a class="navLink" href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div id="navRight">
+        <a class="socialLinks" href="https://github.com/SebWester"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a
+          class="socialLinks"
+          href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a class="socialLinks" href="https://www.facebook.com/wwwester/"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+
+        <!-- If window width is smaller than 600px -->
+        <a class="socialLinksSmall" href="https://github.com/SebWester"
+          ><i class="fa-brands fa-github fa-xl"></i
+        ></a>
+        <a
+          class="socialLinksSmall"
+          href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a class="socialLinksSmall" href="https://www.facebook.com/wwwester/"
+          ><i class="fa-brands fa-facebook fa-xl"></i
+        ></a>
+      </div>
+    </div>
+    <header id="header"></header>
+
+    <!-- CONTACT FORM -->
+    <div id="contactDiv">
+      <div id="contactMe">
+        <form id="contactForm">
+          <h2 id="contactHeading">Kontakta mig</h2>
+          <div class="inputDiv">
+            <label for="name">För- & Efternamn: *</label><br />
+            <input type="text" id="name" required />
+          </div>
+          <div class="inputDiv">
+            <label for="phone">Telefonnummer: *</label><br />
+            <input type="tel" id="phone" required />
+          </div>
+          <div class="inputDiv">
+            <label for="email">E-post: *</label><br />
+            <input type="email" id="email" required />
+          </div>
+          <div class="inputDiv">
+            <label for="msg">Meddelande: *</label><br />
+            <textarea
+              name="msg"
+              id="msg"
+              rows="10"
+              cols="40"
+              maxlength="500"
+              required
+            ></textarea>
+            <br />
+            <input type="submit" value="Skicka" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer>
+      <div id="footerLeft"></div>
+      <div id="footerMid"></div>
+      <footer id="footerRight">
+        <p>© Sebastian Benedek Westerholm 2024</p>
+      </footer>
+    </footer>
+
+    <!-- SCRIPTS -->
     <script
       src="https://kit.fontawesome.com/291b702101.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
-    <nav id="topDiv">
-      <navbar id="navLeft">
-        <a href="index.html" class="navLink"><strong>Startsida</strong></a>
-        <a href="about.html" class="navLink"><strong>Om mig</strong></a>
-        <a href="contact.html" class="navLink"><strong>Kontakt</strong></a>
-      </navbar>
-
-      <!--MOBILSKÄRM-->
-      <navbar id="navLeft-small">
-        <button id="navButton">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </button>
-        <ul id="linkMenu">
-          <li>
-            <a href="index.html" class="navLink"><strong>Startsida</strong></a>
-          </li>
-          <li>
-            <a href="about.html" class="navLink"><strong>Om mig</strong></a>
-          </li>
-          <li>
-            <a href="contact.html" class="navLink" id="comingSoon"
-              ><strong>Kontakt</strong></a
-            >
-          </li>
-        </ul>
-      </navbar>
-
-      <navbar id="navRight">
-        <a href="https://www.facebook.com/wwwester/" target="_blank"
-          ><i class="fa-brands fa-facebook fa-xl"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin fa-xl"></i
-        ></a>
-        <a href="https://github.com/SebWester" target="_blank"
-          ><i class="fa-brands fa-github fa-xl"></i
-        ></a>
-      </navbar>
-    </nav>
-
-    <header id="header"></header>
-    <main id="contact">
-      <div id="contact-form">
-        <form>
-          <div id="nameDiv">
-            <label for="name">Namn:</label>
-            <input type="name" id="name" required />
-          </div>
-          <div id="mailDiv">
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
-          </div>
-          <div id="nrDiv">
-            <label for="phone">Telefonnummer:</label>
-            <input type="tel" id="phone" />
-          </div>
-          <div id="msgDiv">
-            <label for="msg">Meddelande:</label>
-            <textarea
-              name="message"
-              id="msg"
-              rows="20"
-              cols="50"
-              maxlength="500"
-              required
-            ></textarea>
-          </div>
-          <input type="submit" value="Skicka" id="sendIt" />
-        </form>
-      </div>
-    </main>
-
-    <footer id="footer">Sebastian Westerholm 2024</footer>
+    <script src="script.js"></script>
   </body>
 </html>

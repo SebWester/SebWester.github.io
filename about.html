@@ -1,95 +1,115 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastian Westerholm - Om</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Blogg - Start</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="topDiv">
-      <navbar id="navLeft">
-        <a href="index.html" class="navLink"><strong>Startsida</strong></a>
-        <a href="about.html" class="navLink"><strong>Om mig</strong></a>
-        <a href="contact.html" class="navLink"><strong>Kontakt</strong></a>
-      </navbar>
-
-      <!--MOBILSKÄRM-->
-      <navbar id="navLeft-small">
-        <button id="navButton">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </button>
-        <ul id="linkMenu">
-          <li>
-            <a href="index.html" class="navLink"><strong>Startsida</strong></a>
-          </li>
-          <li>
-            <a href="about.html" class="navLink"><strong>Om mig</strong></a>
-          </li>
-          <li>
-            <a href="index.html" class="navLink" id="comingSoon"
-              ><strong>Kontakt</strong></a
-            >
-          </li>
+    <!-- NAV ETC.-->
+    <div id="topDiv">
+      <div id="navLeft">
+        <ul>
+          <li><a class="navLink" href="index.html">Start</a></li>
+          <li><a class="navLink" href="about.html">Om mig</a></li>
+          <li><a class="navLink" href="contact.html">Kontakt</a></li>
         </ul>
-      </navbar>
-
-      <navbar id="navRight">
-        <a href="https://www.facebook.com/wwwester/" target="_blank"
-          ><i class="fa-brands fa-facebook fa-xl"></i
+      </div>
+      <div id="navRight">
+        <a class="socialLinks" href="https://github.com/SebWester"
+          ><i class="fa-brands fa-github fa-2xl"></i
         ></a>
         <a
+          class="socialLinks"
           href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin fa-xl"></i
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
         ></a>
-        <a href="https://github.com/SebWester" target="_blank"
+        <a class="socialLinks" href="https://www.facebook.com/wwwester/"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+
+        <!-- If window width is smaller than 600px -->
+        <a class="socialLinksSmall" href="https://github.com/SebWester"
           ><i class="fa-brands fa-github fa-xl"></i
         ></a>
-      </navbar>
-    </nav>
-    <header id="header"></header>
-    <main id="aboutMe">
-      <img
-        src="pics/jagNasa.png"
-        alt="En bild på mig från NASA:s besökcenter Florida"
-        id="picNasa"
-      />
-      <div>
-        <p class="about-para">
-          Jag heter Sebastian och är 34 år. Jag kommer ursprungligen från
-          Stockholm men är sedan ett år tillbaka en go' gubbe. Jag har en stor
-          passion för musik, speciellt gitarrspel, och tränar regelbundet för
-          att hålla mig i form.
-        </p>
-        <p class="about-para">
-          Genom åren har jag utvecklat en stark arbetsmoral och ett genuint
-          intresse för att alltid lära mig nya saker. I grunden är jag
-          legitimerad röntgensjuksköterska, en roll som har gett mig värdefulla
-          erfarenheter av att arbeta strukturerat, noggrant och med en ständig
-          vilja att hjälpa andra. Dock har mitt intresse för teknik och
-          programmering vuxit starkt under de senaste åren, vilket har lett till
-          att jag nu håller på att omskola mig till front end-utvecklare.
-        </p>
-        <p class="about-para">
-          Jag älskar den kreativa processen och problemlösningen som kommer med
-          kodning, och jag ser fram emot att kunna kombinera mina tidigare
-          erfarenheter med mina nyförvärvade kunskaper inom webbutveckling. Med
-          min drivkraft, arbetslivserfarenhet och nyfikenhet på tekniska
-          lösningar är jag övertygad om att jag har mycket att bidra med i min
-          nya yrkesbana.
-        </p>
-        <p class="about-para" id="bestRegards"><i>Sebastian Westerholm</i></p>
+        <a
+          class="socialLinksSmall"
+          href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a class="socialLinksSmall" href="https://www.facebook.com/wwwester/"
+          ><i class="fa-brands fa-facebook fa-xl"></i
+        ></a>
       </div>
-    </main>
+    </div>
+    <header id="header"></header>
 
-    <footer id="footer">Sebastian Westerholm 2024</footer>
+    <!-- ABOUT ME -->
+    <div id="aboutDiv">
+      <div id="aboutMe">
+        <img
+          src="pics/jagNasa.png"
+          alt="Me at NASA visitor center"
+          id="picNasa"
+        />
+        <div id="aboutText">
+          <p>
+            Jag heter Sebastian Benedek Westerholm, är 34 år gammal och kommer
+            ursprungligen från Stockholm, men sedan ett år tillbaka bor jag i
+            Göteborg och trivs som en riktig "go' gubbe". Min passion för musik,
+            särskilt att spela gitarr, har följt mig genom hela livet, och jag
+            tränar regelbundet för att hålla mig i form både fysiskt och
+            mentalt.
+          </p>
+          <br />
+          <p>
+            Genom åren har jag utvecklat en stark arbetsmoral och ett genuint
+            intresse för att lära mig nya saker. Med min bakgrund som
+            legitimerad röntgensjuksköterska har jag samlat på mig värdefulla
+            erfarenheter, såsom att arbeta strukturerat, noggrant och med en
+            ständig vilja att hjälpa andra. Jag har lärt mig att hantera
+            komplexa situationer med ett analytiskt sinne, och att alltid sätta
+            människors välmående i fokus.
+          </p>
+          <br />
+          <p>
+            Under de senaste åren har mitt intresse för teknik och programmering
+            vuxit sig allt starkare, vilket har lett till att jag nu omskolar
+            mig till front end-utvecklare. Jag älskar den kreativa processen och
+            problemlösningen som kodning innebär. Att se hur en idé kan
+            förvandlas till en fungerande applikation, och att kombinera design
+            och funktionalitet, är något som verkligen engagerar mig.
+          </p>
+          <br />
+          <p>
+            Min bakgrund inom sjukvården har också gett mig ett perspektiv som
+            jag ser som en styrka inom webbutveckling – att förstå användarens
+            behov, att arbeta under press och att kunna anpassa sig efter nya
+            utmaningar. Med en kombination av drivkraft, arbetslivserfarenhet
+            och en ständig nyfikenhet för tekniska lösningar är jag övertygad om
+            att jag har mycket att bidra med i min nya yrkesbana.
+          </p>
+          <br />
+          <p style="font-style: italic">Sebastian Benedek Westerholm</p>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer>
+      <div id="footerLeft"></div>
+      <div id="footerMid"></div>
+      <footer id="footerRight">
+        <p>© Sebastian Benedek Westerholm 2024</p>
+      </footer>
+    </footer>
 
     <!-- SCRIPTS -->
     <script
       src="https://kit.fontawesome.com/291b702101.js"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/about.js" defer></script>
+    <script src="script.js"></script>
   </body>
 </html>

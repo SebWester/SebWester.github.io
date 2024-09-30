@@ -1,163 +1,236 @@
-<!-- HTML TEST! -->
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastian Westerholm - Start</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Blogg - Start</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="topDiv">
-      <navbar id="navLeft">
-        <a href="index.html" class="navLink"><strong>Startsida</strong></a>
-        <a href="about.html" class="navLink"><strong>Om mig</strong></a>
-        <a href="contact.html" class="navLink"><strong>Kontakt</strong></a>
-      </navbar>
-
-      <!--MOBILSKÄRM-->
-      <navbar id="navLeft-small">
-        <button id="navButton">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </button>
-        <ul id="linkMenu">
-          <li>
-            <a href="index.html" class="navLink"><strong>Startsida</strong></a>
-          </li>
-          <li>
-            <a href="about.html" class="navLink"><strong>Om mig</strong></a>
-          </li>
-          <li>
-            <a href="contact.html" class="navLink" id="comingSoon"
-              ><strong>Kontakt</strong></a
-            >
-          </li>
+    <!-- NAV ETC.-->
+    <div id="topDiv">
+      <div id="navLeft">
+        <ul>
+          <li><a class="navLink" href="index.html">Start</a></li>
+          <li><a class="navLink" href="about.html">Om mig</a></li>
+          <li><a class="navLink" href="contact.html">Kontakt</a></li>
         </ul>
-      </navbar>
-
-      <navbar id="navRight">
-        <a href="https://www.facebook.com/wwwester/" target="_blank"
-          ><i class="fa-brands fa-facebook fa-xl"></i
+      </div>
+      <div id="navRight">
+        <a class="socialLinks" href="https://github.com/SebWester"
+          ><i class="fa-brands fa-github fa-2xl"></i
         ></a>
         <a
+          class="socialLinks"
           href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin fa-xl"></i
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
         ></a>
-        <a href="https://github.com/SebWester" target="_blank"
+        <a class="socialLinks" href="https://www.facebook.com/wwwester/"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+
+        <!-- If window width is smaller than 600px -->
+        <a class="socialLinksSmall" href="https://github.com/SebWester"
           ><i class="fa-brands fa-github fa-xl"></i
         ></a>
-      </navbar>
-    </nav>
+        <a
+          class="socialLinksSmall"
+          href="https://www.linkedin.com/in/sebastian-westerholm-08a832116/"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a class="socialLinksSmall" href="https://www.facebook.com/wwwester/"
+          ><i class="fa-brands fa-facebook fa-xl"></i
+        ></a>
+      </div>
+    </div>
     <header id="header"></header>
 
-    <main id="mainContainer">
-      <!-- FLEX -->
-      <section id="blogContainer">
-        <!-- BLOCK -->
-        <h1 id="latest">Senaste inläggen</h1>
-
-        <article class="blog light">
-          <iframe
-            src="https://sv.wikipedia.org/wiki/Portal:Huvudsida"
-            frameborder="0"
-            scrolling="no"
-            id="preview"
-          ></iframe>
-          <p id="shortText">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
-            suscipit, praesentium nisi voluptatibus, facere aliquid itaque
-            impedit dicta sequi nam vitae a quidem eum commodi odit? Ab debitis
-            accusantium aperiam.
-          </p>
-          <a href="#" id="readMore">Till inlägget&rarr;</a>
-        </article>
-
-        <article class="blog dark">
-          <iframe
-            src="https://sv.wikipedia.org/wiki/Portal:Huvudsida"
-            frameborder="0"
-            scrolling="no"
-            id="preview"
-          ></iframe>
-          <p id="shortText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sed
-            atque aspernatur natus hic provident tenetur eveniet itaque odit,
-            tempora repellat quod iure excepturi error et dolorum asperiores
-            officiis. Eius. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Quaerat, ipsam.
-          </p>
-          <a href="#" id="readMore">Till inlägget&rarr;</a>
-        </article>
-
-        <article class="blog light">
-          <iframe
-            src="https://sv.wikipedia.org/wiki/Portal:Huvudsida"
-            frameborder="0"
-            scrolling="no"
-            id="preview"
-          ></iframe>
-          <p id="shortText">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
-            suscipit, praesentium nisi voluptatibus, facere aliquid itaque
-            impedit dicta sequi nam vitae a quidem eum commodi odit? Ab debitis
-            accusantium aperiam.
-          </p>
-          <a href="#" id="readMore">Till inlägget&rarr;</a>
-        </article>
-
-        <article class="blog dark">
-          <iframe
-            src="https://sv.wikipedia.org/wiki/Portal:Huvudsida"
-            frameborder="0"
-            scrolling="no"
-            id="preview"
-          ></iframe>
-          <p id="shortText">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
-            suscipit, praesentium nisi voluptatibus, facere aliquid itaque
-            impedit dicta.
-          </p>
-          <a href="#" id="readMore">Till inlägget&rarr;</a>
-        </article>
-
-        <article class="blog light"></article>
-        <article class="blog dark"></article>
-      </section>
-
-      <aside id="searchContainer">
-        <form>
-          <div class="searchBox">
-            <input
-              type="search"
-              placeholder="Sök efter inlägg"
-              id="searchText"
-              name="searchText"
-            />
-            <button id="search-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-        </form>
-        <div class="tag-container">
-          <h3 id="tags-heading">Tags</h3>
-          <div id="tags">
-            <a href="#" id="firstTag">#abc</a>
-            <a href="#">#def</a>
-            <a href="#">#ghi</a>
-            <a href="#">#ijk</a>
-            <a href="#">#lmn</a>
+    <!-- MAIN CONTENT-->
+    <div id="mainContainer">
+      <div id="blogContainer">
+        <h2 id="latest">Senaste inläggen</h2>
+        <div class="card" id="postA" data-url="posts/postA.html">
+          <div class="postRight">
+            <div class="textPreview">
+              <h3>Den tidlösa världen: En resa genom färgernas rike</h3>
+              <br />
+              <p>
+                Under den ovanligt lila himlen sträcker sig ett fält med blommor
+                så långt ögat kan nå, allt i samma hypnotiska nyans.
+              </p>
+              <br />
+              <p>
+                Det sägs att de som vågar vandra in i detta mystiska landskap
+                upplever en slags tidlöshet, där minuter förvandlas till timmar
+                och varje steg känns som en resa mellan dimensioner.
+              </p>
+              <br />
+              <p>
+                Följ med på ett äventyr där naturens färger styr sinnet och
+                dolda krafter ruvar under varje blomblad.
+              </p>
+            </div>
+            <div class="readMore">
+              <a href="posts/postA.html" class="toPost">Läs här</a>
+            </div>
           </div>
         </div>
-      </aside>
-    </main>
-    <footer id="footer">Sebastian Westerholm 2024</footer>
 
-    <!-- SCRIPTS-->
+        <div class="card" id="postB" data-url="posts/postB.html">
+          <div class="postRight">
+            <div class="textPreview">
+              <h3>Den dolda stigen: Genom skog och berg</h3>
+              <br />
+              <p>
+                I skogarnas hjärta, där träden tornar sig höga som vakter över
+                tidens gång, öppnas en klar glänta med en oslagbar utsikt mot de
+                avlägsna bergen.
+              </p>
+              <br />
+              <p>
+                Det sägs att på en särskild plats här finns en urgammal stig som
+                leder till något mycket mer än bara naturens skönhet.
+              </p>
+              <br />
+              <p>
+                Följ med på en resa genom lövverkets skugga och bergens vindar,
+                där varje steg för dig närmare ett uråldrigt mysterium.
+              </p>
+            </div>
+            <div class="readMore">
+              <a href="posts/postB.html" class="toPost">Läs här</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="postC" data-url="posts/postC.html">
+          <div class="postRight">
+            <div class="textPreview">
+              <h3>Gryningens magi: Där ljus och mörker möts</h3>
+              <br />
+              <p>
+                När solens första strålar skär genom den morgondimma som ligger
+                över landskapet, delas himlen i två—en sida i dämpat lila, den
+                andra i en mjuk ljusblå.
+              </p>
+              <br />
+              <p>
+                Ingen vet varför himlen ser ut så just här, men de som har vågat
+                sig dit vid gryningen talar om oförklarliga fenomen.
+              </p>
+              <br />
+              <p>
+                Nu är det din tur att upptäcka vad som döljer sig i denna
+                magiska gryning, där natten sakta lämnar plats åt dagen, men med
+                en känsla av att något mer är på väg att vakna.
+              </p>
+            </div>
+            <div class="readMore">
+              <a href="posts/postC.html" class="toPost">Läs här</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="postD" data-url="posts/postD.html">
+          <div class="postRight">
+            <div class="textPreview">
+              <h3>Hemligheterna bortom bergen</h3>
+              <br />
+
+              <p>
+                Det sista ljuset från den nedgående solen färgar himlen
+                brinnande orange medan bergen kastar långa skuggor över den
+                gröna ängen.
+              </p>
+              <br />
+              <p>
+                Det här är en plats där myter och verklighet möts, där de gamla
+                sagorna om uråldriga väsen fortfarande berättas vid lägereldar.
+              </p>
+              <br />
+              <p>
+                Vad döljer sig bortom horisonten? Följ med på ett kvällsäventyr
+                där bergen viskar sina hemligheter och naturen självt verkar
+                vilja tala med dig.
+              </p>
+            </div>
+            <div class="readMore">
+              <a href="posts/postD.html" class="toPost">Läs här</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="postE" data-url="posts/postE.html">
+          <div class="postRight">
+            <div class="textPreview">
+              <h3>Mellan vatten och berg: En resa längs den fridfulla ån</h3>
+              <br />
+
+              <p>
+                Längs den stilla ån, där skogen breder ut sig på ena sidan och
+                de snötäckta bergen höjer sig i bakgrunden, råder en märklig,
+                nästan magisk frid.
+              </p>
+              <br />
+              <p>
+                Men de som vandrat förbi säger att detta landskap har sin egen
+                rytm, en pulserande kraft som väntar på att upptäckas.
+              </p>
+              <br />
+              <p>
+                Det är en plats där gränsen mellan verklighet och fantasi blir
+                oskarp, och varje steg närmare vattnet känns som ett steg in i
+                det okända.
+              </p>
+            </div>
+            <div class="readMore">
+              <a href="posts/postE.html" class="toPost">Läs här</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH CONTAINER -->
+      <div id="searchContainer">
+        <div id="searchDiv">
+          <input
+            type="search"
+            name="search"
+            id="searchTags"
+            placeholder="Sök efter taggar"
+          />
+          <label for="searchTags"
+            ><input type="submit" value="Sök" id="searchBtn"
+          /></label>
+        </div>
+
+        <div id="tagDiv">
+          <h4 id="tagsHeading">Taggar:</h4>
+          <div id="tagsContainer">
+            <a class="tags" href="#">#Blommor</a>
+            <a class="tags" href="#">#Skog</a>
+            <a class="tags" href="#">#Berg</a>
+            <a class="tags" href="#">#Gryning</a>
+            <a class="tags" href="#">#Vatten</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer>
+      <div id="footerLeft"></div>
+      <div id="footerMid"></div>
+      <footer id="footerRight">
+        <p>© Sebastian Benedek Westerholm 2024</p>
+      </footer>
+    </footer>
+
+    <!-- SCRIPTS -->
     <script
       src="https://kit.fontawesome.com/291b702101.js"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
