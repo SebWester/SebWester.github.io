@@ -607,7 +607,7 @@ footer {
   }
   .readMore {
     height: 100%;
-    background-color: rgba(240, 241, 239, 0.9);
+    background-color: rgba(240, 241, 239, 1);
   }
   .postContainer {
     padding-right: 0;
